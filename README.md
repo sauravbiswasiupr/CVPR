@@ -21,5 +21,12 @@ For the red , green and blue color channels please use the following peace of co
 The test_set_hidden variables now contain numpy array of size 2004 * 500 
 Each 500 col vector is a feature for a test image passed through the autoencoder and its hidden rep calculated 
 
+For reading the image labels use this 
+>>f = h5py.File("labels_256_gray.h5")
+>>labels = f["labels"] 
+
+All the labels are same for red , green , blue or grayscale channels but separate named ones have been saved for the sake of brevity 
+
+NOTE : Please use different file pointers to read different .h5 files  
 
 ##More updates as more code is done 
